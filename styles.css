@@ -169,9 +169,13 @@ input {
 /* MOBILE VERSION BREAKPOINT */
 
 @media screen and (max-width: 682px) {
-  html,
   body {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    max-height: 100vh;
+    overflow: hidden;
   }
 
   .hero-section {
@@ -190,9 +194,11 @@ input {
     text-align: center;
   }
 
-  .logo {
-    margin-top: 5%;
+  .logo img {
+    padding: 0;
+    margin-top: 0;
     margin-bottom: 10%;
+    height: fit-content;
   }
 
   .decoration-mobile {
