@@ -174,7 +174,7 @@ input {
     justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
-    max-height: 100vh;
+    height: 100vh;
     overflow: hidden;
   }
 
@@ -183,6 +183,7 @@ input {
     margin-top: 0;
     padding: 0;
     width: 100%;
+    height: fit-content;
   }
 
   .main {
