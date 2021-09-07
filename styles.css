@@ -1,0 +1,265 @@
+body {
+  box-sizing: border-box;
+  font-family: "Chivo", sans-serif;
+  font-size: 62.5%;
+  background-color: rgb(18, 23, 37);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+.main {
+  position: relative;
+  min-width: 88%;
+}
+
+.logo img {
+  margin-top: -30px;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  background-image: url("assets/desktop/image-host.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 30%;
+}
+
+.decoration {
+  position: absolute;
+  right: 0;
+  bottom: -55px;
+}
+
+.decoration-mobile {
+  display: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* TEXT AREA */
+
+.main h1 {
+  color: #54e6af;
+  font-size: 54px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 span {
+  color: #ffffff;
+}
+
+.main p {
+  color: #c2cbe5;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7em;
+  text-align: start;
+  width: 40ch;
+  padding-bottom: 1em;
+}
+
+/* HERO SECTION  */
+
+.hero-section {
+  background-color: rgb(18, 23, 37);
+  max-width: 55%;
+  margin-top: 8rem;
+  padding-top: 3.5rem;
+  padding-right: 2em;
+  margin-bottom: -1px;
+}
+
+.platforms img {
+  width: fit-content;
+  padding-right: 2rem;
+}
+
+/* INPUT AREA */
+
+form button,
+input {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+button {
+  color: #121725;
+  background-color: #54e6af;
+  border: none;
+  padding: 0.7em 2.3em;
+  border: 1px solid #54e6af;
+  border-radius: 50px;
+}
+
+input {
+  color: #ffffff;
+  background-color: #2c344b;
+  border: none;
+  padding: 0.8em 5em 0.8em 4em;
+  padding-left: 2em;
+  border-radius: 50px;
+}
+
+.email {
+  margin-bottom: 5em;
+  width: fit-content;
+  height: fit-content;
+  background-color: #2c344b;
+  border: 4px solid #2c344b;
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.platforms-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    align-items: flex-start;
+  }
+
+  .main {
+    min-width: 95%;
+  }
+
+  .main h1 {
+    font-size: 48px;
+  }
+
+  .logo img {
+    margin-top: 3.2rem;
+  }
+
+  .hero-section {
+    max-width: 87%;
+    margin-top: 9.3rem;
+  }
+
+  .decoration {
+    display: none;
+  }
+
+  .decoration-mobile {
+    display: inline;
+    position: absolute;
+    left: 5%;
+    bottom: -3px;
+  }
+
+  .background {
+    background-image: url("assets/tablet/image-host.jpg");
+    background-size: cover;
+  }
+}
+
+/* MOBILE VERSION BREAKPOINT */
+
+@media screen and (max-width: 682px) {
+  html,
+  body {
+    display: block;
+  }
+
+  .hero-section {
+    background-color: transparent;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .main {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+
+  .decoration-mobile {
+    display: none;
+  }
+
+  .decoration {
+    display: none;
+  }
+
+  .main h1 {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .main p {
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .background {
+    background-image: url("assets/mobile/image-host.jpg");
+    background-size: cover;
+    opacity: 10%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .platforms {
+    display: none;
+  }
+
+  .platforms-mobile {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15%;
+  }
+
+  .platforms-mobile img {
+    width: 18%;
+  }
+
+  .email {
+    width: 100%;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    width: 70%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    color: #ffffff;
+  }
+
+  button {
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+}
