@@ -188,7 +188,7 @@ input {
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden;
+    margin-top: 5rem;
   }
 
   .logo {
@@ -259,7 +259,7 @@ input {
   }
 
   button {
-    width: 100%;
+    width: 97%;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
   }
