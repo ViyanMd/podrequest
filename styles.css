@@ -111,6 +111,8 @@ input {
   border-radius: 50px;
 }
 
+
+
 .email {
   margin-bottom: 5em;
   width: fit-content;
@@ -121,6 +123,15 @@ input {
   font-size: 14px;
   line-height: 28px;
   font-weight: 600;
+}
+
+.error {
+  font-size: 1.2em;
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  bottom: 5rem;
+  left: 2rem;
 }
 
 .platforms-mobile {
@@ -176,6 +187,15 @@ input {
     /* border: 1px solid red; */
     height: 100vh;
     overflow: hidden;
+  }
+
+  .error {
+    font-size: 1.2em;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    bottom: 15.5rem;
+    left: 7.5rem;
   }
 
   .hero-section {

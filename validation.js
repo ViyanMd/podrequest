@@ -4,12 +4,13 @@ let errorMessage = document.querySelector(".error");
 
 const checkUserEmail = function (e) {
   e.preventDefault();
-  const pattern = "[a-zA-Z0-9_\\.\\+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-\\.]+";
-  if (!userInput.matches(pattern)) {
-    errorMessage.innerHTML = "<p> Oops! Check your email.</p>";
+  const regex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/;
+  if (!regex.test(userInput.value) || userInput.value == 0) {
+    errorMessage.textContent = "Oops! Check your email.";
   } else {
-    errorMessage.innerHTML = "";
+    userInput.value = "";
   }
 };
 
-form.addEventListener("submit", checkUserEmail);
+form.addEventListener("submit", checkUserEmail, false);
