@@ -10,6 +10,7 @@ const checkUserEmail = function (e) {
     errorMessage.textContent = "Oops! Check your email.";
   } else {
     userInput.value = "";
+    errorMessage.textContent = "";
   }
 };
 
