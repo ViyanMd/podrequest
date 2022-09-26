@@ -1,62 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" type="text/css">
-  <link rel="stylesheet" href="normalize.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
-  
-  <title>Pod request access landing page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+  <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet" />
+  <title>Pod</title>
 </head>
+
 <body>
-
   <div class="main">
-
-    <div class="logo">
-      <img src="assets/desktop/logo.svg" alt="#">
-    </div>
-
-    <div class="background">
-        <!--background img is set via css background -->
-    </div>
+    <img class="logo" src="assets/desktop/logo.svg" alt="#" />
 
     <div class="hero-section">
-      <h1>Publish your podcasts<br/><span>everywhere.</span></h1> 
-        <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-        Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
-        <div class="platforms-mobile">
-          <img src="assets/desktop/spotify.svg" alt="#">
-          <img src="assets/desktop/apple-podcast.svg" alt="#">
-          <img src="assets/desktop/google-podcasts.svg" alt="#">
-          <img src="assets/desktop/pocket-casts.svg" alt="#">
-        </div>
-        
-          <div class="email">
-            <form>
-              <input type="text" placeholder="Email address" id="useremail" />
-              <button type="submit">Request access</button>
-            </form>
-          </div>
-          <span class="error"> </span>
-        
-      <div class="platforms">
-        <img src="assets/desktop/spotify.svg" alt="#">
-        <img src="assets/desktop/apple-podcast.svg" alt="#">
-        <img src="assets/desktop/google-podcasts.svg" alt="#">
-        <img src="assets/desktop/pocket-casts.svg" alt="#">
+      <h1 class="hero-section-header">Publish your podcasts<br /><span>everywhere.</span></h1>
+      <p class="hero-section-content">
+        Upload your audio to Pod with a single click. We’ll then
+        distribute your podcast to Spotify, Apple Podcasts, Google
+        Podcasts, Pocket Casts and more!
+      </p>
+      <div class="email">
+        <form>
+          <input type="text" placeholder="Email address" id="useremail" />
+          <button type="submit">Request access</button>
+        </form>
       </div>
-      </div>
+      <span class="error"> </span>
 
-    <div class="decoration">
-      <img src="assets/desktop/bg-pattern-dots.svg" alt="#">
+      <div class="platforms">
+        <img src="assets/desktop/spotify.svg" alt="#" />
+        <img src="assets/desktop/apple-podcast.svg" alt="#" />
+        <img src="assets/desktop/google-podcasts.svg" alt="#" />
+        <img src="assets/desktop/pocket-casts.svg" alt="#" />
+      </div>
     </div>
 
-  </div>
-  <div class="decoration-mobile">
-    <img src="assets/desktop/bg-pattern-dots.svg" alt="#">
+    <img class="decoration" src="assets/desktop/bg-pattern-dots.svg" alt="#" />
   </div>
 </body>
-<script src="validation.js"></script>
+<script src="app/validation.js"></script>
+
 </html>
