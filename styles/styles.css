@@ -259,7 +259,7 @@ input {
         font-weight: bold;
         position: absolute;
         top: -1.4rem;
-        left: 30%;
+        left: 1rem;
     }
     .decoration {
         display: none;
